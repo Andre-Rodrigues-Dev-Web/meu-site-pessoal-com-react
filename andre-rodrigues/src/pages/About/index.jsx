@@ -1,11 +1,11 @@
 import * as React from "react";
 //Link
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 //React Head
 import { HeadProvider, Title, Link as LinkHead, Meta } from "react-head";
 //Styled Components
 import { PageContainer } from "../../components/Theme/style";
-import { ButtonLink } from '../../components/Buttons/style';
+import { ButtonLink } from "../../components/Buttons/style";
 //MUI Componentes
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -16,7 +16,7 @@ import {
   Container,
   CardActionArea,
   CardActions,
-  Grid,
+  Grid
 } from "@mui/material";
 
 export const About = () => {
@@ -29,12 +29,12 @@ export const About = () => {
         <Container>
           <Grid container spacing={2} mt={2}>
             <Grid item xs={4}>
-              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
+              <Card sx={{ bgcolor: "#000", color: "#fff", maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
                     height="140"
-                    image={CodeImg}
+                    image="../assets/imgs/code.jpg"
                     alt="green iguana"
                   />
                   <CardContent>
@@ -56,7 +56,7 @@ export const About = () => {
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
+              <Card sx={{ bgcolor: "#000", color: "#fff", maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -83,7 +83,7 @@ export const About = () => {
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
+              <Card sx={{ bgcolor: "#000", color: "#fff", maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
