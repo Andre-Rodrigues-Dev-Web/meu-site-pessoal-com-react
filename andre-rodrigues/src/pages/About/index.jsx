@@ -1,8 +1,11 @@
 import * as React from "react";
+//Link
+import { Link} from "react-router-dom";
 //React Head
 import { HeadProvider, Title, Link as LinkHead, Meta } from "react-head";
 //Styled Components
 import { PageContainer } from "../../components/Theme/style";
+import { ButtonLink } from '../../components/Buttons/style';
 //MUI Componentes
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -24,9 +27,36 @@ export const About = () => {
         <LinkHead rel="canonical" href="http://jeremygayed.com/" />
         <Meta name="example" content="whatever" />
         <Container>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} mt={2}>
             <Grid item xs={4}>
-              <Card sx={{ bgcolor: '#000', maxWidth: 345 }}>
+              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={CodeImg}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.white">
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Link to="/home">
+                    <ButtonLink>Visualizar</ButtonLink>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={4}>
+              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -38,7 +68,7 @@ export const About = () => {
                     <Typography gutterBottom variant="h5" component="div">
                       Lizard
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.white">
                       Lizards are a widespread group of squamate reptiles, with
                       over 6,000 species, ranging across all continents except
                       Antarctica
@@ -46,9 +76,36 @@ export const About = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
-                  </Button>
+                  <Link to="/home">
+                    <ButtonLink>Visualizar</ButtonLink>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={4}>
+              <Card sx={{ bgcolor: '#000', color: '#fff', maxWidth: 345 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/static/images/cards/contemplative-reptile.jpg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.white">
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Link to="/home">
+                    <ButtonLink>Visualizar</ButtonLink>
+                  </Link>
                 </CardActions>
               </Card>
             </Grid>
